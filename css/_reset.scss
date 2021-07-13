@@ -1,0 +1,28 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+  list-style: none;
+  text-decoration: none;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  background-color: $black-dark;
+  color: $white-normal;
+}
+
+a {
+  color: $white-normal;
+}
