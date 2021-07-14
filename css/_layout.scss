@@ -1,66 +1,40 @@
-.menu {
-  width: 100%;
-  padding: 48px 16px;
-  @include flex(row, center, space-between);
-  position: fixed;
-  z-index: 999;
-  backdrop-filter: blur(3px);
-
-  @include responsive(960px) {
-    .menu-left {
-      display: none;
-    }
-
-    .menu-right {
-      display: none;
-    }
-  }
-}
-
 // CONTAINER
-
 .relative {
   position: relative;
 }
 
 .container {
   width: 100%;
-  max-width: 1220px;
+  height: auto;
 
-  margin: 0 auto;
-  padding: 24px 16px;
+  background-color: $primary;
 
-  @include flex(row, center, center);
+  &__hero {
+    max-width: 1256px;
+    height: 100vh;
+    @include flex(row, center, space-between);
 
-  @include responsive(960px) {
-    flex-direction: column;
-    padding-top: 96px;
+    padding: 0px 16px;
+    margin: 0 auto;
+
+    width: 100%;
   }
 }
 
 .hero {
-  height: 100vh;
-
   @include responsive(960px) {
     height: auto;
   }
 }
 
-.container-item:nth-child(1) {
-  flex-grow: 2;
-
-  margin: 40px 0px;
-}
-
-.container-item:nth-child(2) {
-  flex-grow: 1;
-
-  margin: 40px 0px;
-  @include flex(row, center, center);
-
-  img {
-    max-width: 400px;
+.container-item {
+  &__text {
+    width: 100%;
+    max-width: 350px;
   }
+  // flex-grow: 2;
+
+  // margin: 40px 0px;
 }
 
 .bg-hero {
@@ -88,6 +62,15 @@
 
 .icon-square {
   @include flex(row, flex-end, center);
+}
+
+.home__blob {
+  width: 600px;
+  overflow: hidden;
+}
+
+.home__blob-img {
+  width: 230px;
 }
 
 // SELECTED WORKS

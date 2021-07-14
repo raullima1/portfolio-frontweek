@@ -11,18 +11,20 @@
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
   width: 100%;
-  background-color: $black-dark;
-  color: $white-normal;
+  background-color: $primary;
+  color: $tertiary;
 }
 
 a {
-  color: $white-normal;
+  color: $tertiary;
 }
