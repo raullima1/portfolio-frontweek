@@ -88,6 +88,52 @@
 
 .person {
   @include flex(row, center, space-between);
+
+  &__content {
+    width: 45%;
+
+    // h2 {
+    //   text-align: center;
+    // }
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 730px;
+
+    &--svg {
+      position: absolute;
+      top: -330px;
+      left: 60px;
+
+      height: auto;
+      width: 100%;
+    }
+  }
+}
+
+.work {
+  @include flex(row, center, space-between);
+
+  &__content {
+    width: 45%;
+  }
+
+  &__image {
+    position: relative;
+    width: 100%;
+    max-width: 700px;
+
+    &--svg {
+      width: 100%;
+      height: auto;
+
+      position: absolute;
+      top: -250px;
+      left: -150px;
+    }
+  }
 }
 
 // SKILLS
