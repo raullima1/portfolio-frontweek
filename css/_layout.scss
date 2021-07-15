@@ -3,27 +3,38 @@
   position: relative;
 }
 
-.container {
+.container-primary {
   width: 100%;
   height: auto;
 
   background-color: $primary;
 
   &__hero {
+    width: 100%;
     max-width: 1256px;
-    height: 100vh;
+
+    height: auto;
     @include flex(row, center, space-between);
 
-    padding: 0px 16px;
+    padding: 150px 16px;
     margin: 0 auto;
-
-    width: 100%;
   }
 }
 
-.hero {
-  @include responsive(960px) {
+.container-secondary {
+  width: 100%;
+  height: auto;
+
+  background-color: $tertiary;
+  color: $primary;
+
+  &__person {
     height: auto;
+    width: 100%;
+    max-width: 1256px;
+
+    padding: 0px 16px;
+    margin: 0 auto;
   }
 }
 
@@ -73,6 +84,34 @@
   width: 230px;
 }
 
+// PERSON
+
+.person {
+  @include flex(row, center, space-between);
+}
+
+// SKILLS
+.skills {
+  @include flex(column, center, space-between);
+
+  &__cards {
+    width: 100%;
+    @include flex(row, center, space-between);
+    flex-wrap: wrap;
+
+    &:nth-child(2) {
+      border-bottom: 1px solid rgba($primary, 0.2);
+    }
+
+    &--itens {
+      width: 30%;
+      text-align: center;
+
+      @include flex(row, center, center);
+    }
+  }
+}
+
 // SELECTED WORKS
 
 .bb-gray {
@@ -117,4 +156,57 @@
   width: 100%;
   margin: 0 auto;
   padding: 16px 24px;
+}
+
+// EXPERIENCE
+
+.experience {
+  &__title {
+    text-align: center;
+    h6 {
+      color: $black-light;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    @include flex(row, flex-start, space-between);
+
+    &--column {
+      width: 100%;
+      max-width: 450px;
+      height: auto;
+    }
+
+    &--item {
+      padding: 24px 48px;
+
+      color: $tertiary;
+      background-color: rgba($secondary-purple, 0.9);
+
+      border-radius: 8px;
+    }
+
+    &--legend {
+      h5 {
+        color: $primary;
+      }
+      h6 {
+        color: $black-light;
+      }
+    }
+  }
+}
+
+// FOOTER
+
+.container-footer {
+  height: auto;
+  width: 100%;
+  max-width: 1256px;
+
+  padding: 0px 16px;
+  margin: 0 auto;
+
+  @include flex(column, center, space-between);
 }

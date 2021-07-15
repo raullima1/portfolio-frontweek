@@ -23,7 +23,8 @@ h5 {
   line-height: 130%;
 }
 
-h6 {
+h6,
+p {
   font-size: 1.8rem;
   line-height: 140%;
 }
@@ -49,9 +50,16 @@ h6 {
   -webkit-text-fill-color: transparent;
 }
 
+.mask2 {
+  background: linear-gradient(225deg, #a239ca 0%, #4717f6 100%);
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .line {
   display: inline-block;
-  border-right: 2px solid red;
+  border-right: 2px solid #4717f6;
   white-space: nowrap;
   overflow: hidden;
 }
@@ -62,7 +70,7 @@ h6 {
 
 @keyframes blinkCursor {
   from {
-    border-right-color: red;
+    border-right-color: #4717f6;
   }
   to {
     border-right-color: transparent;
