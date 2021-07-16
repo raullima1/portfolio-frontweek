@@ -25,6 +25,11 @@ body {
   color: $tertiary;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 a {
   color: $tertiary;
 }

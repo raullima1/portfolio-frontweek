@@ -90,7 +90,7 @@
   @include flex(row, center, space-between);
 
   &__content {
-    width: 45%;
+    width: 70%;
 
     // h2 {
     //   text-align: center;
@@ -99,16 +99,21 @@
 
   &__image {
     position: relative;
+    height: auto;
     width: 100%;
-    max-width: 730px;
+    max-width: 1300px;
 
     &--svg {
-      position: absolute;
-      top: -330px;
-      left: 60px;
-
-      height: auto;
       width: 100%;
+
+      position: absolute;
+
+      top: -330px;
+      left: 200px;
+
+      img {
+        width: 100%;
+      }
     }
   }
 }

@@ -26,6 +26,11 @@ body {
   color: #e7dfdd;
 }
 
+body,
+html {
+  overflow-x: hidden;
+}
+
 a {
   color: #e7dfdd;
 }
@@ -869,20 +874,24 @@ p {
 }
 
 .person__content {
-  width: 45%;
+  width: 70%;
 }
 
 .person__image {
   position: relative;
+  height: auto;
   width: 100%;
-  max-width: 730px;
+  max-width: 1300px;
 }
 
 .person__image--svg {
+  width: 100%;
   position: absolute;
   top: -330px;
-  left: 60px;
-  height: auto;
+  left: 200px;
+}
+
+.person__image--svg img {
   width: 100%;
 }
 
